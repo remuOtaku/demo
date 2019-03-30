@@ -1,0 +1,158 @@
+@charset "utf-8";
+#login{
+    width: 410px;
+    height: 524px;
+}
+.tabs{
+    text-align: center;
+    padding: 27px 0 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #666;
+    a{
+        color: #666;
+    }
+    .active{
+        color: #f56600;
+    }
+    span{
+        width: 1px;
+        height: 24px;
+        margin: 0 35px;
+        border: 1px solid #e0e0e0;
+    }
+}
+.tabs-con{
+    // display: none;
+    background: #fff;
+    height: 405px;
+    .login-area{
+        margin: 0 31px;
+        input{
+            margin-bottom: 14px;
+            width: 312px;
+            line-height: 22px;
+            padding: 13px 16px 13px 14px;
+            border:1px solid #e0e0e0;
+            outline: 0;
+            &[type="submit"]{
+                // width: 100%;
+                padding: 0;
+                line-height: 50px;
+                height: 50px;
+                width: 346px;
+                border: 0;
+                background: #ff6700;
+                color: #fff;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+        }
+        div:nth-of-type(1){
+            .other{
+                float: right;
+                color: #999;
+                a{
+                    color: #999;
+                    &:hover{
+                        color: #ff6700;
+                    }
+                }
+            }
+            .iphone{
+                a{
+                    color: #ff6700;
+                }
+                
+            }
+        }
+        .sns-login{
+            padding-top: 3px;
+            text-align: center;
+            a{
+                margin: 0 17px;
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                background: #666;
+                border-radius: 50%;
+                i{
+                    display: block;
+                    margin: 4px auto 0;
+                    background: url(../images/icons_type.png)no-repeat;
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            .qq{
+                background-color: #0288d1;
+                i{
+                    background-position: -19px 0;
+                }
+                
+            }
+            .weibo{
+                background-color: #d32f2f;
+                i{
+                    background-position: -38px 0;
+                }
+                
+            }
+            .alipay{
+                background-color: #0ae;
+                i{
+                    background-position: -57px 0;
+                    margin: 6px 3px 0;
+                    width: 24px;
+                }
+                
+            }
+            .weixin{
+                background-color: #00d20d;
+                i{
+                    margin: 6px 3px 0;
+                    background-position: -83px 0;
+                    width: 24px;
+                }
+                
+            }
+        }
+        div:nth-of-type(2){
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+            position: relative;
+            margin:120px 0 18px;
+            p{
+                color: #bbb;
+                font-size: 14px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                background: #fff;
+            }
+        }
+    }
+    
+}
+.tabs-con1{
+    display: none;
+    background: #fff;
+    height: 405px;
+    overflow: hidden;
+    text-align: center;
+    div{
+        div{
+            margin-top: 100px;
+        }
+        p{
+            color: #757575;
+            span{
+                color: #ff6700;
+            }
+            &:nth-of-type(1){
+                padding-top: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+@charset "utf-8";
+#main {
+  background: #fff;
+}
+#main .container {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+#main .container .left {
+  position: relative;
+  width: 792px;
+}
+#main .container .left .goodpic {
+  height: 482px;
+  width: 482px;
+  left: 186px;
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+  cursor: zoom-in;
+}
+#main .container .left .goodpic img {
+  width: 100%;
+}
+#main .container .left ul {
+  position: absolute;
+  width: 70px;
+}
+#main .container .left ul li {
+  height: 70px;
+  border: 1px solid #e0e0e0;
+  position: relative;
+}
+#main .container .left ul li img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#main .container .right {
+  width: 420px;
+  float: right;
+}
+#main .container .right dt {
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 38px;
+}
+#main .container .right .tit {
+  margin-top: 7px;
+  color: #616161;
+  font-size: 14px;
+  line-height: 23px;
+}
+#main .container .right .type {
+  color: #616161;
+  font-size: 14px;
+  line-height: 23px;
+}
+#main .container .right .com {
+  margin: 10px 0 5px;
+  color: #ff6700;
+}
+#main .container .right .price {
+  margin-top: 20px;
+  height: 66px;
+  line-height: 66px;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  color: #ff6700;
+  font-size: 30px;
+}
+#main .container .right .color {
+  padding-top: 18px;
+}
+#main .container .right .color span {
+  color: #757575;
+  line-height: 20px;
+  font-size: 14px;
+  display: block;
+}
+#main .container .right .color div a {
+  border-color: #ff6700;
+  display: block;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  width: 38px;
+  height: 38px;
+}
+#main .container .right .color div a img {
+  margin-right: 14px;
+  margin-top: 6px;
+  width: 100%;
+}
+#main .container .right .cart {
+  height: 50px;
+  margin-top: 30px;
+}
+#main .container .right .cart a {
+  width: 261px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  display: block;
+  float: left;
+  text-align: center;
+  border: 1px solid #ff6700;
+  background: #fff;
+  color: #ff6700;
+}
+#main .container .right .cart a:hover {
+  color: #fff;
+  background-color: #f25807;
+  border-color: #f25807;
+}

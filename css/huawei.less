@@ -1,0 +1,89 @@
+@charset "utf-8";
+.wrap{
+    position: relative;
+    margin-left:-2000px;
+    margin-right:-2000px;
+    text-align: center;
+    font-size: 16px;
+    &>img{
+        vertical-align: top;
+    }
+}   
+// 头部
+#header{
+    .wrap{
+        .container{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 0;
+            width: 1920px;
+            z-index: 2;
+            .logo{
+            width: 196px;
+            height: 60px;
+            // background: rgb(38, 211, 22);
+            position: absolute;
+            cursor: pointer;
+            left:350px;
+            }
+        }  
+        
+        nav{
+            width: 1200px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            ul{
+                float: right;
+                li{
+                    float: left;
+                    &>a{
+                        display: block;
+                        padding:20px 10px 0;
+                        color: #fff;
+                    }
+                    &>a:hover{
+                        text-decoration:underline;
+                    }
+                    .unlogin{
+                        padding: 20px 0 0 40px;
+                        overflow: hidden;
+                        img{
+                            padding-right: 12px;
+                            float: left;
+                            margin-top: 6px;
+                        }
+                        a{
+                            margin-right: 8px;
+                            color: #fff;
+                            float: left;
+                        }
+                        p{
+                            float: left;
+                        }
+                        p:before{
+                            content: "";
+                            display: block;
+                            float: left;
+                            width: 1px;
+                            height: 16px;
+                            background: #fff;
+                            margin: 6px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+#ad{
+    .container{
+        margin: 0 auto;
+    }
+}

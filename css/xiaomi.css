@@ -1,0 +1,412 @@
+@charset "utf-8";
+.container {
+  width: 1226px;
+  margin: 0 auto;
+}
+#banner {
+  position: relative;
+  z-index: 80;
+}
+#banner .container {
+  position: relative;
+}
+#banner .container .box {
+  overflow: hidden;
+  height: 460px;
+}
+#banner .container .banner-list {
+  width: 7000px;
+  height: 460px;
+  position: relative;
+}
+#banner .container .banner-list div {
+  float: left;
+  height: 100%;
+}
+#banner .container .banner-list div a img {
+  height: 100%;
+}
+#banner .container .banner-list .show {
+  display: block;
+}
+#banner .container .banner-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+#banner .container .banner-btn a {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  border: 2px solid #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  text-align: left;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.4);
+}
+#banner .container .banner-btn a:hover {
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(0, 0, 0, 0.4);
+}
+#banner .container .banner-btn .active {
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(0, 0, 0, 0.4);
+}
+#banner .container .change a {
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+  width: 41px;
+  height: 69px;
+  margin-top: -35px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+#banner .container .change .pre {
+  background: url(../images/icon-slides.png) no-repeat -84px 50%;
+  left: 234px;
+}
+#banner .container .change .pre:hover {
+  background-position: 0 50%;
+}
+#banner .container .change .next {
+  right: 0;
+  background: url(../images/icon-slides.png) no-repeat -125px 50%;
+}
+#banner .container .change .next:hover {
+  background-position: -42px 50%;
+}
+#banner .container .banner-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 234px;
+  height: 460px;
+  font-size: 14px;
+  border: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+}
+#banner .container .banner-item .left-item {
+  height: 420px;
+  margin-top: 20px;
+}
+#banner .container .banner-item .left-item li a {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+}
+#banner .container .banner-item .left-item li a i {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+}
+#banner .container .banner-item .left-item li:hover > a {
+  background: #ff6700;
+}
+#banner .container .banner-item .left-item .left-sub {
+  position: absolute;
+  left: 234px;
+  top: 0;
+  height: 460px;
+  display: none;
+}
+#banner .container .banner-item .left-item .left-sub ul {
+  position: absolute;
+  top: 0;
+  height: 460px;
+  background: #fff;
+}
+#banner .container .banner-item .left-item .left-sub ul li {
+  width: 265px;
+  height: 76px;
+}
+#banner .container .banner-item .left-item .left-sub ul li a {
+  display: block;
+  padding: 18px 20px;
+  line-height: 40px;
+  color: #333;
+}
+#banner .container .banner-item .left-item .left-sub ul li a img {
+  margin-right: 12px;
+  vertical-align: middle;
+  width: 40px;
+}
+#banner .container .banner-item .left-item .left-sub ul li a span {
+  line-height: 40px;
+}
+#banner .container .banner-item .left-item .left-sub ul li a:hover {
+  background: #fff;
+}
+#banner .container .banner-item .left-item .left-sub ul li a:hover span {
+  color: #ff6700;
+}
+#banner .container .banner-item .left-item .left-sub .col1 {
+  left: 0;
+}
+#banner .container .banner-item .left-item .left-sub .col2 {
+  left: 265px;
+}
+#banner .container .banner-item .left-item .left-sub .col3 {
+  left: 530px;
+}
+#banner .container .banner-item .left-item .left-sub .col4 {
+  left: 795px;
+}
+#main .main-top {
+  margin-top: 14px;
+  overflow: hidden;
+  margin-bottom: 26px;
+}
+#main .main-top .span4 {
+  width: 234px;
+  float: left;
+}
+#main .main-top .span4 ul {
+  margin: 0;
+  padding: 3px;
+  list-style-type: none;
+  font-size: 12px;
+  text-align: center;
+  background: #5f5750;
+  overflow: hidden;
+}
+#main .main-top .span4 ul li {
+  list-style-type: none;
+  font-size: 12px;
+  text-align: center;
+  background: #5f5750;
+  float: left;
+  width: 70px;
+  height: 82px;
+  padding: 0 3px;
+}
+#main .main-top .span4 ul li a {
+  display: block;
+  padding-top: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color .2s;
+}
+#main .main-top .span4 ul li a i {
+  display: block;
+  height: 24px;
+  margin-bottom: 4px;
+  font-size: 24px;
+  line-height: 24px;
+}
+#main .main-top .span4 ul li a:hover {
+  color: #fff;
+}
+#main .main-top .span3 {
+  width: 978px;
+  float: right;
+}
+#main .main-top .span3 ul {
+  overflow: hidden;
+}
+#main .main-top .span3 ul li {
+  float: left;
+  width: 316px;
+  margin-left: 15px;
+  transition: box-shadow 0.2s linear;
+}
+#main .main-top .span3 ul li a {
+  display: block;
+}
+#main .main-top .span3 ul li a img {
+  width: 316px;
+  height: 170px;
+}
+#main .main-top .span3 ul li:nth-of-type(1) {
+  margin-left: 0;
+}
+#main .main-title-p {
+  margin: 2px 0 42px;
+  overflow: hidden;
+}
+#main .main-title-p a {
+  display: block;
+}
+#main .main-title-p a img {
+  width: 100%;
+}
+#goods {
+  padding-top: 22px;
+  background: #f5f5f5;
+}
+#goods .title {
+  position: relative;
+  height: 58px;
+}
+#goods .title h2 {
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 58px;
+  color: #333;
+}
+#goods .title .more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#goods .title .more a {
+  font-size: 16px;
+  line-height: 58px;
+  color: #424242;
+  transition: all .4s;
+}
+#goods .title .more a i {
+  width: 12px;
+  height: 12px;
+  padding: 4px;
+  margin-left: 8px;
+  border-radius: 16px;
+  font-size: 12px;
+  line-height: 12px;
+  background: #b0b0b0;
+  color: #fff;
+  vertical-align: 1px;
+  transition: all .4s;
+}
+#goods .title .more a:hover {
+  color: #ff6700;
+}
+#goods .title .more a:hover i {
+  background: #ff6700;
+}
+#goods .boxgoods {
+  overflow: hidden;
+}
+#goods .boxgoods .row .row-left {
+  width: 234px;
+  float: left;
+}
+#goods .boxgoods .row .row-left a {
+  display: block;
+}
+#goods .boxgoods .row .row-left a img {
+  width: 100%;
+}
+#goods .boxgoods .row .row-left li:nth-of-type(1) {
+  margin-bottom: 8px;
+}
+#goods .boxgoods .row .row-right {
+  float: right;
+}
+#goods .boxgoods .row .row-right ul {
+  width: 992px;
+}
+#goods .boxgoods .row .row-right ul li {
+  height: 260px;
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
+  float: left;
+  width: 234px;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  background: #fff;
+}
+#goods .boxgoods .row .row-right ul li .row-img {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 18px;
+}
+#goods .boxgoods .row .row-right ul li .row-img a {
+  display: block;
+}
+#goods .boxgoods .row .row-right ul li .row-img a img {
+  width: 100%;
+}
+#goods .boxgoods .row .row-right ul li h3 {
+  margin: 0 10px 2px;
+  text-align: center;
+}
+#goods .boxgoods .row .row-right ul li h3 a {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #333;
+  font-size: 14px;
+}
+#goods .boxgoods .row .row-right ul li p {
+  margin: 0 10px 10px;
+  height: 18px;
+  font-size: 12px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #b0b0b0;
+}
+#goods .boxgoods .row .row-right ul li .price {
+  margin: 0 10px 14px;
+  color: #ff6700;
+}
+#goods .boxgoods .row .row-right ul li .price span {
+  text-align: center;
+  color: #ff6700;
+}
+#goods .boxgoods .row .row-right ul li .flag-new {
+  background-color: #83c44e;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 2;
+  width: 64px;
+  height: 20px;
+  margin-left: -32px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+}
+#goods .boxgoods .row .row-right ul .small {
+  height: 73px;
+  padding-top: 50px;
+}
+#goods .boxgoods .row .row-right ul .small .row-img {
+  position: absolute;
+  right: 20px;
+  top: 32px;
+  width: 80px;
+  height: 80px;
+}
+#goods .boxgoods .row .row-right ul .small h3 {
+  margin: -10px 110px 5px 30px;
+  font-size: 14px;
+}
+#goods .boxgoods .row .row-right ul .small .price {
+  margin: 0 105px 0 35px;
+  font-size: 12px;
+  color: #ff6700;
+  text-align: left;
+}
+#goods .boximg {
+  margin: 28px 0 22px;
+}
+#goods .boximg a {
+  display: block;
+}
+#goods .boximg a img {
+  height: 120px;
+}
+#goods li:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, -2px, 0);
+}

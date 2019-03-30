@@ -1,0 +1,143 @@
+@charset "utf-8";
+#login {
+  width: 410px;
+  height: 524px;
+}
+.tabs {
+  padding: 27px 0 24px;
+  text-align: center;
+  font-size: 24px;
+  color: #666;
+}
+.tabs a {
+  color: #666;
+}
+.tabs .active {
+  color: #f56600;
+}
+.tabs span {
+  width: 1px;
+  height: 24px;
+  margin: 0 35px;
+  border: 1px solid #e0e0e0;
+}
+.tabs-con {
+  background: #fff;
+  height: 405px;
+}
+.tabs-con .login-area {
+  margin: 0 31px;
+}
+.tabs-con .login-area input {
+  margin-bottom: 14px;
+  width: 312px;
+  line-height: 22px;
+  padding: 13px 16px 13px 14px;
+  border: 1px solid #e0e0e0;
+  outline: 0;
+}
+.tabs-con .login-area input[type="submit"] {
+  padding: 0;
+  line-height: 50px;
+  height: 50px;
+  width: 346px;
+  border: 0;
+  background: #ff6700;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.tabs-con .login-area div:nth-of-type(1) .other {
+  float: right;
+  color: #999;
+}
+.tabs-con .login-area div:nth-of-type(1) .other a {
+  color: #999;
+}
+.tabs-con .login-area div:nth-of-type(1) .other a:hover {
+  color: #ff6700;
+}
+.tabs-con .login-area div:nth-of-type(1) .iphone a {
+  color: #ff6700;
+}
+.tabs-con .login-area .sns-login {
+  padding-top: 3px;
+  text-align: center;
+}
+.tabs-con .login-area .sns-login a {
+  margin: 0 17px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: #666;
+  border-radius: 50%;
+}
+.tabs-con .login-area .sns-login a i {
+  display: block;
+  margin: 4px auto 0;
+  background: url(../images/icons_type.png) no-repeat;
+  width: 18px;
+  height: 18px;
+}
+.tabs-con .login-area .sns-login .qq {
+  background-color: #0288d1;
+}
+.tabs-con .login-area .sns-login .qq i {
+  background-position: -19px 0;
+}
+.tabs-con .login-area .sns-login .weibo {
+  background-color: #d32f2f;
+}
+.tabs-con .login-area .sns-login .weibo i {
+  background-position: -38px 0;
+}
+.tabs-con .login-area .sns-login .alipay {
+  background-color: #0ae;
+}
+.tabs-con .login-area .sns-login .alipay i {
+  background-position: -57px 0;
+  margin: 6px 3px 0;
+  width: 24px;
+}
+.tabs-con .login-area .sns-login .weixin {
+  background-color: #00d20d;
+}
+.tabs-con .login-area .sns-login .weixin i {
+  margin: 6px 3px 0;
+  background-position: -83px 0;
+  width: 24px;
+}
+.tabs-con .login-area div:nth-of-type(2) {
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  position: relative;
+  margin: 120px 0 18px;
+}
+.tabs-con .login-area div:nth-of-type(2) p {
+  color: #bbb;
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+.tabs-con1 {
+  display: none;
+  background: #fff;
+  height: 405px;
+  overflow: hidden;
+  text-align: center;
+}
+.tabs-con1 div div {
+  margin-top: 100px;
+}
+.tabs-con1 div p {
+  color: #757575;
+}
+.tabs-con1 div p span {
+  color: #ff6700;
+}
+.tabs-con1 div p:nth-of-type(1) {
+  padding-top: 14px;
+}

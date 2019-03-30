@@ -1,0 +1,179 @@
+@charset "utf-8";
+body {
+  background: #f9f9f9;
+}
+#main {
+  padding: 20px 0;
+}
+#main .wrap {
+  width: 854px;
+  margin: 0 auto;
+  background: #fff;
+}
+#main .wrap > div {
+  padding: 0 34px 30px;
+}
+#main .wrap > div .logo {
+  padding-bottom: 40px;
+}
+#main .wrap > div .logo a {
+  width: 49px;
+  height: 48px;
+  margin: 0 auto;
+  display: block;
+  cursor: default;
+  background: url('../images/milogo.png') no-repeat;
+}
+#main .wrap > div .title h4 {
+  font-size: 30px;
+  text-align: center;
+}
+#main .wrap > div div .regbox {
+  width: 332px;
+  padding: 30px 0;
+  margin: 0 auto;
+  line-height: 20px;
+}
+#main .wrap > div div .regbox .iphone_step h4 {
+  padding-bottom: 5px;
+  color: #333;
+}
+#main .wrap > div div .regbox .iphone_step .listwrap {
+  margin-bottom: 8px;
+  border: 1px solid #e8e8e8;
+}
+#main .wrap > div div .regbox .iphone_step .listwrap #user {
+  width: 310px;
+  border: 0;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px;
+  outline: 0;
+}
+#main .wrap > div div .regbox .iphone_step > p {
+  vertical-align: middle;
+  color: #f66;
+  display: none;
+}
+#main .wrap > div div .regbox .iphone_step > p em {
+  background: url(../images/下载.png) no-repeat;
+  display: block;
+  height: 14px;
+  width: 14px;
+  margin-right: 5px;
+  float: left;
+  margin-top: 3px;
+}
+#main .wrap > div div .regbox .iphone_step .iplist {
+  overflow: hidden;
+}
+#main .wrap > div div .regbox .iphone_step .iplist .checkbox {
+  position: relative;
+  width: 54px;
+  text-align: center;
+  padding: 0 9px 15px;
+  height: 25px;
+  line-height: 40px;
+  float: left;
+  vertical-align: middle;
+  border: 1px solid #e8e8e8;
+  color: #555;
+  cursor: pointer;
+}
+#main .wrap > div div .regbox .iphone_step .iplist .checkbox p {
+  float: left;
+}
+#main .wrap > div div .regbox .iphone_step .iplist .checkbox i {
+  float: left;
+  margin: 17px 0 0 10px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #9d9d9d transparent transparent transparent;
+}
+#main .wrap > div div .regbox .iphone_step .iplist .input {
+  border: 1px solid #e8e8e8;
+  float: left;
+  margin-left: -1px;
+}
+#main .wrap > div div .regbox .iphone_step .iplist .input input {
+  border: 0;
+  width: 236px;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px;
+  outline: 0;
+}
+#main .wrap > div div .regbox .iphone_step .iplist .err_tip,
+#main .wrap > div div .regbox .iphone_step .iplist .err_tip1 {
+  margin-top: 10px;
+  overflow: hidden;
+  display: none;
+}
+#main .wrap > div div .regbox .iphone_step .iplist .err_tip em,
+#main .wrap > div div .regbox .iphone_step .iplist .err_tip1 em {
+  background: url(../images/下载.png) no-repeat;
+  display: block;
+  height: 14px;
+  width: 14px;
+  margin-right: 5px;
+  float: left;
+  margin-top: 3px;
+}
+#main .wrap > div div .regbox .iphone_step .iplist .err_tip span,
+#main .wrap > div div .regbox .iphone_step .iplist .err_tip1 span {
+  vertical-align: middle;
+  color: #f66;
+}
+#main .wrap > div div .regbox .iphone_step .sib {
+  margin-top: 15px;
+}
+#main .wrap > div div .regbox .iphone_step .sib input {
+  background-color: #ff6700;
+  margin-top: 15px;
+  border: 1px solid rgba(186, 186, 186, 0.3);
+  color: #fff;
+  width: 330px;
+  height: 42px;
+  margin: 0 auto;
+  line-height: 42px;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  cursor: pointer;
+  outline: 0;
+}
+#main .wrap > div div .regbox .iphone_step .sib input:hover {
+  background: #ff936a;
+}
+#main .wrap > div div .privbox {
+  text-align: center;
+  padding-top: 40px;
+}
+#main .wrap > div div .privbox i {
+  background: url('../images/check.png') no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-top: -4px;
+  vertical-align: middle;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#main .wrap > div div .privbox .act {
+  border-color: #e8e8e8;
+  background: #fff;
+}
+#main .wrap > div div .privbox a {
+  color: #333;
+  font-weight: bold;
+}
+#footer {
+  padding-top: 30px;
+  background: transparent;
+}
