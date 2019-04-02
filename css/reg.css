@@ -23,6 +23,7 @@ body {
   display: block;
   cursor: default;
   background: url('../images/milogo.png') no-repeat;
+  cursor: pointer;
 }
 #main .wrap > div .title h4 {
   font-size: 30px;
