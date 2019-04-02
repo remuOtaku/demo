@@ -4,7 +4,7 @@ function ini() {
     if (!!(cookie.get("username"))) {
         $('.log').css('display', 'none');
         $('.islog').css('display', 'block').children('a').eq(0).html(cookie.get("username"));
-        for (let i = 1; i < 100; i++) {
+        for (var i = 1; i < 100; i++) {
             if (localStorage.getItem(i)) {
                 shuzu.push(localStorage.getItem(i));
                 $('#header .top-char>a').css({
