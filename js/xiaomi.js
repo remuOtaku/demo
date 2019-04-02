@@ -1,13 +1,82 @@
-// 购物车
-$('.top-char').hover(function() {
-    $('.top-char a').css('background', '#fff').css('hegiht', '44px').hover(function() {
-        $('.char-menu').slideDown(100);
-    });
-    $('.char-menu').css('display', 'block');
-
-}, function() {
-    $('.top-char a').css('background', '').css('hegiht', '');
-    $('.char-menu').slideUp(300);
+var list = $('.inphone .boxgoods .row-right ul');
+var list1 = $('.homeelec .boxgoods .row-right ul');
+$.ajax({
+    url: "php/goods.php",
+    type: "get",
+    dataType: "json",
+    "success": function(data) {
+        var temp;
+        data.forEach(function(elm, i) {
+            if (i > 7) {
+                return;
+            }
+            temp = `
+                <li>
+                    <div class="row-img">
+                        <a href="more.html?id=${elm.id}">
+                        <img data-original="images/${elm.big}" class="lazy">
+                        </a>
+                    </div>
+                    <h3><a href="more.html?id=${elm.id}">${elm.goods}</a></h3>
+                    <p class="desc">${elm.tit}</p>
+                    <p class="price"> <span class="num">${elm.price}</span></p>
+                    <div class="flag-new">新品</div>
+                </li>
+                `;
+            $('img.lazy').lazyload({
+                effect: 'fadeIn',
+                placeholder: 'images/timg.gif',
+            });
+            $(list).append(temp);
+        });
+    }
+});
+$.ajax({
+    url: "php/goods.php",
+    type: "get",
+    dataType: "json",
+    "success": function(data) {
+        var temp;
+        data.forEach(function(elm, i) {
+            if (i <= 7) {
+                return;
+            }
+            if (i < 15) {
+                temp = `
+                <li>
+                    <div class="row-img">
+                        <a href="more.html?id=${elm.id}">
+                        <img data-original="images/${elm.big}" class="lazy">
+                        </a>
+                    </div>
+                    <h3><a href="more.html?id=${elm.id}">${elm.goods}</a></h3>
+                    <p class="desc">${elm.tit}</p>
+                    <p class="price"> <span class="num">${elm.price}</span></p>
+                    <div class="flag-new">新品</div>
+                </li>
+                `;
+            } else {
+                temp = `
+                <li class="small">
+                                    <div class="row-img">
+                                        <a href="more.html?id=${elm.id}"><img data-original="images/${elm.big}" class="lazy"></a>
+                                    </div>
+                                    <h3><a href="more.html?id=${elm.id}">${elm.goods}</a></h3>
+                                    <p class="price"><span class="num">${elm.price}</span></p>
+                                </li>
+                `;
+            }
+            $('img.lazy').lazyload({
+                effect: 'fadeIn',
+                placeholder: 'images/timg.gif',
+            });
+            $(list1).append(temp);
+        });
+    }
+});
+$('img.lazy').lazyload({
+    effect: 'fadeIn',
+    placeholder: 'images/timg.gif',
 });
 //二级导航
 
@@ -22,14 +91,12 @@ $('.nav-main .nav-item').on('mouseover', function() {
     show();
 });
 $('.nav-main').on("mouseenter mouseleave", function(ev) {
-    // console.log(this);
     var _that = this;
     var w = $(this).width();
     var h = $(this).height();
     var x = (ev.pageX - this.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
     var y = (ev.pageY - this.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
     var direction = Math.round(((Math.atan2(y, x) * (180 / Math.PI) + 180) / 90) + 3) % 4;
-    // console.log(direction);
     if (direction == 2) {
         $('.li-sub').on('mouseleave', function() {
             display();
@@ -95,25 +162,18 @@ $('.next').click(function() {
     start();
 });
 $('.banner-btn>a').on('click', function() {
-        // console.log(this);
-        i = $('.banner-btn>a').index(this);
-        start();
-    })
-    // console.log($('.banner-btn>a'));
+    i = $('.banner-btn>a').index(this);
+    start();
+});
 init();
 //侧边二级
 $('.left-item,.left-sub').on('mouseenter', function() {
     let geshu = $('.left-sub').children('ul').length;
-    // console.log(geshu);
     $('.left-sub').css('width', geshu * 256 + 'px').css('display', 'block');
 }).on('mouseleave', function() {
     $('.left-sub').css('display', 'none');
 });
 
-if (!!(cookie.get("username"))) {
-    $('.log').css('display', 'none');
-    $('.islog').css('display', 'block').children('a').eq(0).html(cookie.get("username"));
-}
 $('.islog').children('a').eq(1).click(function() {
     cookie.remove("username");
     $('.log').css('display', 'block');

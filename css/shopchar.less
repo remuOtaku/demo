@@ -82,7 +82,6 @@ body{
 #main{
     padding: 38px 0;
     .temp{
-        display: none;
         height: 273px;
         padding-left: 558px;
         margin: 65px 0 130px;
@@ -161,6 +160,18 @@ body{
                     width: 80px;
                     padding-right: 40px;
                     height: 80px;
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        img{
+                            width: 100%;
+                            position: absolute;
+                            top: 50%;
+                            transform:translateY(-50%);
+                        }
+                    }
                 }
                 .goodsname{
                     width: 380px;
@@ -250,6 +261,7 @@ body{
             height: 50px;
             background: #fff;
             text-align: right;
+            width: 100%;
             margin-top: 30px;
             position: relative;
             .bar-left{
@@ -273,7 +285,7 @@ body{
                     }
                 }
             }
-            span{
+            &>span{
                 color: #ff6700;
                 em{
                     font-size: 30px;

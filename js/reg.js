@@ -25,7 +25,14 @@ $('.sib input').on('click', function() {
         $('.err_tip1').css('display', 'none').addClass('islog', 'true');
     }
     if ($('.iphone_step>p').hasClass('islog') && $('.err_tip').hasClass('islog') && $('.err_tip1').hasClass('islog')) {
-        location.href = "../php/updata.php?user=" + user + '&pwd=' + pwd;
+        location.href = "php/reg.php?user=" + user + '&pwd=' + pwd;
+    } else if (!($('.iphone_step>p').hasClass('islog'))) {
+        $('.iphone_step>p').css('display', 'block');
+        if (!($('.err_tip').hasClass('islog'))) {
+            $('.err_tip').css('display', 'block');
+        }
+    } else if (!($('.err_tip').hasClass('islog'))) {
+        $('.err_tip').css('display', 'block');
     }
 
 });

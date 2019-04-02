@@ -7,6 +7,7 @@
                 document.cookie = key + '=' + val + ';expires=' + d + ';Path=' + escape('/');
             } else {
                 document.cookie = key + '=' + val;
+                ';Path = ' + escape(' / ');
             }
         },
         remove: function(key) {

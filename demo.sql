@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 2019-03-30 13:28:32
+-- Generation Time: 2019-03-31 14:07:22
 -- 服务器版本： 5.7.14
 -- PHP Version: 5.6.25
 
@@ -37,7 +37,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`uid`, `name`, `pwd`) VALUES
-(10001, 'admin', '123456');
+(10001, 'admin', '123456'),
+(10002, 'zhangsan', '123456'),
+(10003, 'wangwu', '123456');
 
 --
 -- Indexes for dumped tables
@@ -57,7 +59,7 @@ ALTER TABLE `users`
 -- 使用表AUTO_INCREMENT `users`
 --
 ALTER TABLE `users`
-  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10002;
+  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10004;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
