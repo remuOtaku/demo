@@ -37,6 +37,7 @@ $.ajax({
                 <dd class="cart" onclick="gouwche()">
                     <a href="javascript:;">加入购物车</a>
                 </dd>
+                <dd class="num">已选择<span>0</span>台</dd>
             </div>
         `;
         main.append(temp);
@@ -68,4 +69,10 @@ function gouwche() {
         }
     }
     $('#header .top-char>a span').html("(" + shuzu.length + ")");
+    shuliang();
 };
+
+function shuliang() {
+    $('.num span').html(localStorage.getItem(url));
+}
+shuliang();

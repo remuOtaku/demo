@@ -115,3 +115,8 @@
   background-color: #f25807;
   border-color: #f25807;
 }
+#main .container .right .num {
+  line-height: 30px;
+  font-size: 30px;
+  padding: 20px 0;
+}
